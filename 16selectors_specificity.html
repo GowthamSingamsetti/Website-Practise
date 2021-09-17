@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selectors_Specificity</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/5styles.css" />
+  </head>
+  <body>
+    <!-- SS Triangle= 1)ID 2)class & attribūṭe 3)Element selector  -->
+    <!-- If there are 2 styling elements with same id then the last one is selected-->
+    <!-- !important will be given the highest precendence no matter what.
+    But it is not best practise to use important. Below is the alternative -->
+    <!-- We need to be more specific of the address.
+        (1,0,0) here 1st numb represents No of ID selectors. (#products)
+        2nd numb represents class/Attribute selectors (.products)
+        3rd numb represents element selctors. (h1,h2,article,section) -->
+
+    <article>
+      <h1 id="products" class="highlight">Heading</h1>
+    </article>
+
+    <article id="street">
+      <h2 id="item" class="twilight">breaking</h2>
+    </article>
+  </body>
+</html>

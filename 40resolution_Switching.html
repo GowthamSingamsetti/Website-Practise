@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/29styles.css" />
+    <title>Resolution Switching & Webp</title>
+  </head>
+  <body>
+    <img
+      src="images/background/meal.jpg"
+      alt="Salmon and curry"
+      class="meal"
+      srcset="
+        images/background/meal.jpg     400w,
+        images/background/meal@2x.jpg  800w,
+        images/background/meal@3x.jpg 1200w
+      "
+      sizes="
+        (max-width: 500px) 100vw,
+        (max-width: 700px) 50vw,
+        33vw      
+      "
+    />
+    ----------------------------------------------------------------------------------
+    <h2>Webp and jpg formats diff</h2>
+    <div>
+      <img src="images/background/meal.webp" alt="" />
+      <img src="images/background/meal.jpg" alt="" />
+    </div>
+    ----------------------------------------------------------------------------------
+    <h2>
+      For Goddamn Internet explorer and other browsers that doesn't support
+      modern image formats
+    </h2>
+    <picture>
+      <source
+        type="images/background/meal.webp"
+        srcset="
+          images/background/meal.webp    1x,
+          images/background/meal@2x.webp 2x
+        "
+      />
+      <source type="images/background/meal.jpeg"
+      srcset="images/background/meal.jpg />
+      <img src="images/background/meal.jpg" alt="" />
+    </picture>
+  </body>
+</html>
+<!--  There are diff resolutions. they can have pixel ratio 2 but resolution diff   ers   -->
+<!-- 400w, 800w, 1200w(Pixels) is the actual width of the image  -->
+<!-- If we use media query to size then browser will confuse. So we use sizes attribute of
+    img. Here the breakpoints used are completely arbitratry  -->
+<!-- https://www.responsivebreakpoints.com/           for selecting breakpoints -->
+<!--  https://convertio.co/jpg-webp/           jpg to webp  -->

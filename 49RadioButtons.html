@@ -1,0 +1,72 @@
+<!DOCTYPE >
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/33styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Radio_Buttons & Range & File_Inputs</title>
+  </head>
+  <body>
+    <form>
+      <h3>Radio</h3>
+      <div>
+        <input type="radio" name="treasure" id="gold" />
+        <label class="label-inline" for="gold">Gold</label>
+      </div>
+      <div>
+        <input type="radio" name="treasure" id="silver" />
+        <label class="label-inline" for="silver">Silver</label>
+        <!-- Here it is imp to give same name or else it will be considered as diff group
+        and then it becomes checkbox. For diff radio groups diff names
+        We also have attrib like checked, disabled -->
+      </div>
+      <h3>Range</h3>
+      <div>
+        <input type="range" min="0" max="100" current="50" name="" id="" />
+      </div>
+
+      <h3>Input files</h3>
+      <div>
+        <input
+          type="file"
+          multiple
+          accept=".pdf, .txt, .doc, .xml, .jpg, image/*,
+        audio/*, video/* "
+        />
+        <!-- image/*, audio/*, video/* will allow any image, audio and video files -->
+      </div>
+
+      <h3>Grouping Related Fields</h3>
+      <fieldset>
+        <legend>Billing Address</legend>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </fieldset>
+      <section>
+        <h2>Payment</h2>
+        <input type="text" />
+        <input type="text" />
+        <input type="text" />
+      </section>
+
+      <h2>Hidden Fields</h2>
+      <input type="hidden" name="course-name" value="1234" />
+      <!--Hidden is always visible in page source file-->
+
+      <h2>Data Validation</h2>
+      <input type="text" required minlength="3" maxlength="10" />
+      <input type="email" required />
+      <input type="date" required />
+      <input type="number" min="0" max="10" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
+<!--    -->

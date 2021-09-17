@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Providing CSS</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style>
+      p {
+        color: blue;
+      }
+
+      #highlight {
+        color: purple;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!--There are 3 ways to provide CSS styling to HTML
+    Embedded, External, Inline CSS -->
+    <!--Embedded violates Seperation of Concerns. When we need to change 
+    color of paragraphs in other pages then we have to change every page. -->
+    <!--We can override external css by giving embedded rules which apply for
+    only that particular webpage-->
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p style="color: green; font-weight: bold">Lorem ipsum dolor sit amet.</p>
+    <!--The above one is example of Inline styles. Should be avoided.
+         Instead we can follow the below format-->
+    <p id="highlight">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>

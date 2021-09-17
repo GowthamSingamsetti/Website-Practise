@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-Class-Selectors</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/3styles.css" />
+  </head>
+  <body>
+    <!-- Pseudo classes are not real classes but they are classes that browsers
+    apply by default.  All Pseudo classes start with a colon -->
+    <!-- first-child is the 1st element in the below article. If we add another
+    heading or paragh above, then it will be first child -->
+    <!-- Posiiton is the main thing in these type of classes -->
+    <article>
+      <p class="random">Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+    </article>
+    <hr />
+
+    <section>
+      <h2>Heading</h2>
+      <p class="fandom">Lorem ipsum dolor sit amet.</p>
+      <p>Lorem ipsum dolor sit amet.</p>
+      <a href="#">Link</a>
+    </section>
+    <!-- This is example of first-of-type which selects first of every 
+        type in the following section -->
+    <!-- When we give section p:first-of-type then only the first paragh is styled -->
+    <hr />
+
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ul>
+
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ol>
+
+    <ol id="second">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+      <li>Item 5</li>
+    </ol>
+
+    <a href="#52#">Link2</a><br />
+    <a href="#5#">Link3</a><br />
+    <a href="#00#">Link4</a><br />
+    <br />
+    <br />
+  </body>
+</html>

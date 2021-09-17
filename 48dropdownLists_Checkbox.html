@@ -1,0 +1,63 @@
+<!DOCTYPE >
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/33styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+    <title>Drop down lists & Check boxes</title>
+  </head>
+  <body>
+    <h2>Drop down lists</h2>
+    <form>
+      <label for="select">Select any course</label>
+      <select id="select">
+        <option value="">Select a course..</option>
+        <option value="1" selected>HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+      ------------------------------------------------------------
+      <select multiple>
+        <option value="">Select a course..</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">JavaScript</option>
+      </select>
+      ------------------------------------------------------------
+      <select>
+        <optgroup label="Front-End Courses">
+          <option value="">Select a course..</option>
+          <option value="1">HTML</option>
+          <option value="2">CSS</option>
+          <option value="3">JavaScript</option>
+        </optgroup>
+        <optgroup label="Back-End Courses">
+          <option value="4">HTML</option>
+          <option value="5">CSS</option>
+          <option value="6">JavaScript</option>
+        </optgroup>
+      </select>
+      -------------------------------------------------------------
+
+      <h2>Checkboxes</h2>
+      <div>
+        <input type="checkbox" id="english" checked />
+        <label class="label-inline" for="english">English</label>
+      </div>
+      <div>
+        <input type="checkbox" id="telugu" disabled />
+        <label class="label-inline" for="telugu">Telugu</label>
+      </div>
+    </form>
+  </body>
+</html>
+<!--  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist  -->
+<!--  we cant style option and datalist in css visit above site  -->
+<!-- In datalist the values will be visible to the user but in dropdown lists the values
+are submitted to the server -->

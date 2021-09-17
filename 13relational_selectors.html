@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relational_selectors</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/2styles.css" />
+  </head>
+  <body>
+    <!-- This #products p is called descendant selector -->
+    <section id="products">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <aticle>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </aticle>
+    </section>
+    <br />
+
+    <section id="trade">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <aticle>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </aticle>
+    </section>
+    <!-- We use > inbetween relational selectors to select only 1st direct child paragh -->
+    <br />
+
+    <section id="build">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <aticle>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </aticle>
+    </section>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <br />
+    <!-- This paragh is a sibiling of the above section. 
+        We use + inbetween relational selectors to select only 1st sibiling -->
+
+    <section id="troy">
+      <p>Lorem ipsum dolor sit amet.</p>
+      <aticle>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </aticle>
+    </section>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <!-- In this we use ~ to color all sectional sibilings -->
+    <!-- Relational selectors gives a cleaner markup as there will be no need
+    for creating newer classes and Ids. But they are fragile as they depend on 
+    the position of the elements. Should only be used when we are confident
+    that positions won't be moved   -->
+  </body>
+</html>
